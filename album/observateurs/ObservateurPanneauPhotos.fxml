@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="album.controllers.ControllerPanneauPhotos">
+<children>
+    <!-- Vue générale du panneau photos => un bouton telecharger + album en cours -->
+    <VBox fx:id="general" prefWidth="370.0" visible="false">
+        <children>
+            <HBox prefHeight="80.0" prefWidth="370.0">
+                <children>
+                    <Button mnemonicParsing="false" onAction="#download" prefHeight="65.0" prefWidth="355.0" text="Télécharger des photos">
+                        <HBox.margin>
+                            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                        </HBox.margin>
+                    </Button>
+                </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="80.0" prefWidth="370.0">
+                <children>
+                    <Button mnemonicParsing="false" onAction="#showAlbums" prefHeight="80.0" prefWidth="370.0" text="Accéder à mes photos">
+                        <HBox.margin>
+                            <Insets />
+                        </HBox.margin>
+                    </Button>
+                </children>
+            </HBox>
+        </children>
+    </VBox>
+
+    <!-- Vue detaillé du panneau photos => toute les images telecharger dans l'album ( non visible par défault ) -->
+    <VBox fx:id="details" prefWidth="370.0">
+        <children>
+            <HBox prefHeight="80.0" prefWidth="370.0">
+                <children>
+                    <Button mnemonicParsing="false" onAction="#download" prefHeight="65.0" prefWidth="355.0" text="Télécharger des photos">
+                        <HBox.margin>
+                            <Insets bottom="15.0" left="15.0" right="15.0" top="15.0" />
+                        </HBox.margin>
+                    </Button>
+                </children>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" prefHeight="40.0" prefWidth="370.0">
+                <children>
+                    <Button mnemonicParsing="false" onAction="#showAllAlbums" prefHeight="25.0" prefWidth="120.0" text="&lt; Tout les albums">
+                        <HBox.margin>
+                            <Insets bottom="5.0" left="20.0" top="5.0" />
+                        </HBox.margin>
+                    </Button>
+                </children>
+            </HBox>
+            <Line endX="369.0" stroke="WHITE" />
+            <HBox prefHeight="30.0" prefWidth="370.0">
+                <children>
+                    <Label fx:id="dragndrapLabel" text="Faire glisser les photos ci dessous" textFill="WHITE">
+                        <HBox.margin>
+                            <Insets bottom="5.0" left="20.0" top="5.0" />
+                        </HBox.margin>
+                    </Label>
+                </children>
+            </HBox>
+            <HBox prefHeight="660.0" prefWidth="370.0">
+               <children>
+                  <ListView fx:id="listViewColumn1" onDragDropped="#dragDrop" onDragOver="#dragOver" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #333333" />
+                  <ListView fx:id="listViewColumn2" onDragDropped="#dragDrop" onDragOver="#dragOver" prefHeight="200.0" prefWidth="200.0" style="-fx-background-color: #333333" />
+               </children>
+            </HBox>
+        </children>
+    </VBox>
+</children>
+</Pane>

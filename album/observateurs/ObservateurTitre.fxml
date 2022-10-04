@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<HBox xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="album.controllers.ControllerTitre">
+    <children>
+        <Label prefHeight="75.0" text="Photobox" textFill="WHITE">
+            <font>
+                <Font name="DejaVu Sans Bold" size="41.0" />
+            </font>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+         <padding>
+            <Insets left="50.0" />
+         </padding>
+        </Label>
+      <Label layoutX="10.0" layoutY="10.0" prefHeight="75.0" prefWidth="300.0" text="[ Free edition ]" textFill="WHITE">
+         <font>
+            <Font name="DejaVu Sans Bold" size="15.0" />
+         </font>
+         <padding>
+            <Insets left="10.0" top="15.0" />
+         </padding>
+         <HBox.margin>
+            <Insets />
+         </HBox.margin>
+      </Label>
+        <ComboBox prefHeight="55.0" prefWidth="650.0" promptText="Formule : 29.99euros">
+            <HBox.margin>
+                <Insets bottom="10.0" top="10.0" />
+            </HBox.margin>
+        </ComboBox>
+      <Label fx:id="promotion" layoutX="10.0" layoutY="10.0" onMouseClicked="#rotate" prefHeight="75.0" text="PROMOTION !!!" textFill="WHITE">
+         <font>
+            <Font name="DejaVu Sans Bold" size="30.0" />
+         </font>
+         <HBox.margin>
+            <Insets left="50.0" />
+         </HBox.margin>
+      </Label>
+    </children>
+</HBox>

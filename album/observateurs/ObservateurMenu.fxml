@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="album.controllers.ControllerMenu">
+    <children>
+        <HBox style="-fx-background-color: grey;">
+            <children>
+                <Button layoutX="330.0" layoutY="10.0" mnemonicParsing="false" onAction="#addPage" prefHeight="83.0" prefWidth="199.0" text="Ajouter une page">
+               <font>
+                  <Font size="18.0" />
+               </font></Button>
+            </children>
+        </HBox>
+    </children>
+</Pane>

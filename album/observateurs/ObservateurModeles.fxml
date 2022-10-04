@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<!--
+        <AnchorPane layoutX="451.0" layoutY="75.0" prefHeight="810.0" prefWidth="1125.0" style="-fx-background-color: yellow;" AnchorPane.leftAnchor="450.0" AnchorPane.topAnchor="75.0">
+        -->
+
+<BorderPane fx:id="borderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="810.0" prefWidth="1125.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="album.controllers.ControllerModeles">
+        <children>
+        </children>
+   <top>
+           <HBox alignment="CENTER">
+                   <children>
+                           <fx:include fx:id="menu" source="ObservateurMenu.fxml" />
+                   </children>
+         <BorderPane.margin>
+            <Insets top="20.0" />
+         </BorderPane.margin>
+           </HBox>
+   </top>
+        <center>
+                <HBox fx:id="pages" alignment="TOP_CENTER">
+                        <children>
+                        </children>
+         <opaqueInsets>
+            <Insets />
+         </opaqueInsets>
+         <BorderPane.margin>
+            <Insets top="20.0" />
+         </BorderPane.margin>
+                </HBox>
+        </center>
+        <bottom>
+                <HBox fx:id="menuViewPage" prefHeight="55.0" prefWidth="300.0">
+                        <children>
+                                <Button mnemonicParsing="false" prefHeight="55.0" prefWidth="150.0" text="Toutes les pages" visible="false" /> <!--A supprimer si non utilisé-->
+                                <Button layoutX="30.0" layoutY="10.0" mnemonicParsing="false" prefHeight="55.0" prefWidth="150.0" text="Double page" visible="false" /> <!--A supprimer si non utilisé-->
+            <Button layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#previousPage" prefHeight="55.0" prefWidth="30.0" text="&lt;">
+               <HBox.margin>
+                  <Insets left="160.0" />
+               </HBox.margin>
+            </Button>
+            <ComboBox fx:id="pageChoice" prefHeight="55.0" prefWidth="180.0" styleClass="combo-box" stylesheets="@../outils/css/style.css" />
+            <Button layoutX="160.0" layoutY="10.0" mnemonicParsing="false" onAction="#nextPage" prefHeight="55.0" prefWidth="30.0" text="&gt;" />
+            <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0">
+               <HBox.margin>
+                  <Insets left="100.0" />
+               </HBox.margin>
+               <children>
+                  <Label style="-fx-font-size: 15; -fx-font-weight: bold;" text="Nombre de pages :" />
+                  <Label fx:id="nbPages" style="-fx-font-size: 15; -fx-font-weight: bold;">
+                     <HBox.margin>
+                        <Insets left="10.0" />
+                     </HBox.margin>
+                  </Label>
+               </children>
+            </HBox>
+                        </children>
+         <BorderPane.margin>
+            <Insets bottom="20.0" left="20.0" />
+         </BorderPane.margin>
+                </HBox>
+        </bottom>
+</BorderPane>

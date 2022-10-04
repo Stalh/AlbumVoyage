@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<Pane xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="album.controllers.ControllerPagePhoto">
+   <children>
+      <VBox alignment="CENTER">
+          <children>
+              <Pane fx:id="pageIG" onDragDropped="#dragDropped" onDragOver="#dragOver" prefHeight="560.0" prefWidth="540.0" style="-fx-background-color: white;"/>
+              <Separator prefHeight="10.0" prefWidth="${pageIG.width}" />
+              <Button mnemonicParsing="false" onAction="#randFormat" prefHeight="25.0" prefWidth="180.0" text="Changer la mise en page"/>
+          </children>
+      </VBox>
+   </children>
+</Pane>

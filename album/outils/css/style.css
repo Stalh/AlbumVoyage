@@ -1,0 +1,33 @@
+.combo-box {
+    -fx-alignment: center;
+    -fx-text-alignment: center;
+}
+
+.noheader .column-header-background {
+    -fx-max-height: 0;
+    -fx-pref-height: 0;
+    -fx-min-height: 0;
+}
+
+.ListView1_noScrollBar .scroll-bar:vertical {
+    -fx-scale-x: 0;
+    -fx-padding: -10;
+    -fx-opacity: 0;
+}
+
+.ListView1_noScrollBar .list-cell{
+    -fx-background-color: #333333;
+}
+
+.ListView1_noScrollBar .scroll-bar{
+    -fx-background-color: #333333;
+}
+
+.ListView2 .list-cell{
+    -fx-background-color: #333333;
+}
+
+.ListView2 .scroll-bar{
+    -fx-background-color: #333333;
+}
+

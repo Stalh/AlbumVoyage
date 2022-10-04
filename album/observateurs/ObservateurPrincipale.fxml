@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="885.0" prefWidth="1575.0" xmlns="http://javafx.com/javafx/10.0.2-internal" xmlns:fx="http://javafx.com/fxml/1" fx:controller="album.controllers.ControllerPrincipale">
+
+    <fx:include fx:id="titre" maxHeight="75" maxWidth="1575" minHeight="75" minWidth="1575" prefHeight="75.0" prefWidth="1575.0" source="ObservateurTitre.fxml" style="-fx-background-color: #141414" />
+
+    <fx:include fx:id="navigation" prefHeight="810" source="ObservateurNavigateur.fxml" AnchorPane.leftAnchor="0" AnchorPane.topAnchor="75.0" style="-fx-background-color: #141414;" />
+
+    <fx:include fx:id="panneauPhoto" prefHeight="810.0" source="ObservateurPanneauPhotos.fxml" visible="true" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="75.0" style="-fx-background-color: #333333;" />
+
+    <fx:include fx:id="modeles" source="ObservateurModeles.fxml" AnchorPane.leftAnchor="450.0" AnchorPane.topAnchor="75.0" style="-fx-background-color: #d9d8d8" />
+
+</AnchorPane>
